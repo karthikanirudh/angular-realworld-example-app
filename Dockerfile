@@ -1,7 +1,7 @@
-FROM node:16-alpine
+FROM node:16-slim
 LABEL project="qtlearning"
 LABEL author="shaikkhajaibrahim"
-ADD . /angular-realworld-example-app
+Add . /angular-realworld-example-app
 RUN cd angular-realworld-example-app && npm install -g @angular/cli && npm install
 EXPOSE 4200
 WORKDIR /angular-realworld-example-app
